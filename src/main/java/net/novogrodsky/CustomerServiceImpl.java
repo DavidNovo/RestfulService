@@ -18,7 +18,17 @@ public class CustomerServiceImpl implements ICustomerService {
     }
 
     @Override
-    public void addCustomer(Customer customer) {
+    public GenericResponse addCustomer(Customer customer) {
+        GenericResponse response = new GenericResponse();
 
+        if (customer != null && customer.getAge() > 20) {
+            response.setMessage("Customer added");
+            response.setSuccess(true);
+
+        } else {
+            response.setMessage("Customer to young to be added");
+            response.setSuccess(false);
+        }
+        return response;
     }
 }
