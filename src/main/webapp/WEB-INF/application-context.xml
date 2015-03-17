@@ -1,0 +1,7 @@
+
+    <!-- import apache cxf -->
+    <import resource="classpath:META-INF/cxf/cxf.xml" />
+    <import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
+
+
+    <context:annotation-config />
