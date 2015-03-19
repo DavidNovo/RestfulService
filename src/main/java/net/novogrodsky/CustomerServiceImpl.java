@@ -12,7 +12,7 @@ public class CustomerServiceImpl implements ICustomerService {
         Customer newCustomer = new Customer();
         newCustomer.setAddress("San Antonio");
         newCustomer.setAge(34);
-        newCustomer.setName("David");
+        newCustomer.setName(name);
 
         return newCustomer;
     }
